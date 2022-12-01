@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BenchmarkMatchController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/exemplo1', [BenchmarkMatchController::class, 'exemplo1']);
+Route::get('/exemplo2', [BenchmarkMatchController::class, 'exemplo2']);
+
+
